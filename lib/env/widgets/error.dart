@@ -17,8 +17,8 @@ class ErrorPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: context.color.primary,
         appBar: NavigationHeader(
-          backgroundColor: context.color.onBackground,
-          selectionColor: context.color.background.withOpacity(0.35),
+          backgroundColor: context.color.onSurface,
+          selectionColor: context.color.surface.withOpacity(0.35),
         ),
         drawer: NavigationDrawer.of(context),
         body: ListView(
@@ -54,7 +54,7 @@ class ErrorPage extends StatelessWidget {
                                   fontWeight: FontWeight.w900,
                                   shadows: [
                                     BoxShadow(
-                                      color: context.color.onBackground
+                                      color: context.color.onSurface
                                           .withOpacity(0.25),
                                       offset:
                                           const Offset(0.0, Constants.spacing),

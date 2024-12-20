@@ -8,11 +8,11 @@ class NavigationFooter extends StatelessWidget {
     return Theme(
       data: context.theme.copyWith(
         textSelectionTheme: TextSelectionThemeData(
-          selectionColor: context.color.background.withOpacity(0.15),
+          selectionColor: context.color.surface.withOpacity(0.15),
         ),
       ),
       child: Container(
-        color: context.color.onBackground,
+        color: context.color.onSurface,
         padding: const EdgeInsets.all(Constants.spacing),
         constraints: BoxConstraints(minWidth: context.width),
         child: Wrap(
@@ -123,7 +123,7 @@ class NavigationFooter extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   text: "© 2023 Louis Wiwawan",
                   style: context.text.bodyMedium?.copyWith(
-                    color: context.color.background.withOpacity(0.25),
+                    color: context.color.surface.withOpacity(0.25),
                     fontWeight: FontWeight.w400,
                     fontSize: 11.0,
                   ),

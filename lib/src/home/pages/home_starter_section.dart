@@ -167,10 +167,10 @@ class HomeStarter extends StatelessWidget {
                 child: DTextArea(
                   isDense: false,
                   textAlign: TextAlign.start,
-                  cursorColor: context.color.background,
+                  cursorColor: context.color.surface,
                   borderRadius: BorderRadius.circular(Constants.spacing * 0.5),
                   borderSideIdle: BorderSide.none,
-                  backgroundColor: context.color.onBackground.withOpacity(0.5),
+                  backgroundColor: context.color.onSurface.withOpacity(0.5),
                   hintText: 'Enter Your Email Adress              ',
                   contentPadding: const EdgeInsets.symmetric(
                     horizontal: Constants.spacing,
@@ -184,7 +184,7 @@ class HomeStarter extends StatelessWidget {
                     color: context.color.surface.withOpacity(0.5),
                   ),
                   borderSideActive: BorderSide(
-                    color: context.color.background.withOpacity(0.75),
+                    color: context.color.surface.withOpacity(0.75),
                   ),
                   placeholder: DButton.text(
                     text:

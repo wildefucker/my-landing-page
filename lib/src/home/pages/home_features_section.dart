@@ -110,7 +110,7 @@ class HomeFeatures extends StatelessWidget {
                   control: SwiperControl(
                     iconNext: Icons.navigate_next_rounded,
                     iconPrevious: Icons.navigate_before_rounded,
-                    color: context.color.background,
+                    color: context.color.surface,
                   ),
                 ),
               ),
@@ -196,7 +196,7 @@ class HomeFeatures extends StatelessWidget {
             borderRadius: BorderRadius.circular(Constants.spacing * 0.5),
             boxShadow: [
               BoxShadow(
-                color: context.color.onBackground.withOpacity(0.1),
+                color: context.color.onSurface.withOpacity(0.1),
                 blurRadius: 10.0,
               ),
             ],

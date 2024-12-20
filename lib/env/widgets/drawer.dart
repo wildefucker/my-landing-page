@@ -41,7 +41,7 @@ class NavigationDrawer extends Drawer {
                           child: DButton.text(
                             text: item.name,
                             mainAxisSize: MainAxisSize.max,
-                            color: context.color.background
+                            color: context.color.surface
                                 .withOpacity(isSelected ? 0.25 : 0.0),
                             padding: const EdgeInsets.all(Constants.spacing),
                             margin: const EdgeInsets.only(
@@ -49,7 +49,7 @@ class NavigationDrawer extends Drawer {
                               bottom: Constants.spacing * 0.5,
                             ),
                             style: context.text.bodyMedium?.copyWith(
-                                color: context.color.background
+                                color: context.color.surface
                                     .withOpacity(isSelected ? 1.0 : 0.5),
                                 fontWeight: isSelected
                                     ? FontWeight.w700
@@ -67,7 +67,7 @@ class NavigationDrawer extends Drawer {
                                   source: isSelected
                                       ? item.activeIcon
                                       : item.inactiveIcon,
-                                  color: context.color.background,
+                                  color: context.color.surface,
                                   size: const Size.square(Constants.spacing),
                                 )),
                             onTap: () =>

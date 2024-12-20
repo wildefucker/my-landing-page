@@ -165,7 +165,7 @@ class HomePricing extends StatelessWidget {
             margin: const EdgeInsets.only(right: Constants.spacing),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Constants.spacing),
-              color: context.color.background,
+              color: context.color.surface,
             ),
             child: MergeSemantics(
               child: Column(
@@ -179,7 +179,7 @@ class HomePricing extends StatelessWidget {
                       item.title,
                       semanticsLabel: item.title,
                       style: context.text.titleMedium?.copyWith(
-                        color: context.color.onBackground,
+                        color: context.color.onSurface,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -203,7 +203,7 @@ class HomePricing extends StatelessWidget {
                               '\$',
                               semanticsLabel: 'USD',
                               style: context.text.bodyMedium?.copyWith(
-                                color: context.color.onBackground,
+                                color: context.color.onSurface,
                                 fontSize: 20.0,
                               ),
                             ),
@@ -219,7 +219,7 @@ class HomePricing extends StatelessWidget {
                               style: context.text.titleLarge?.copyWith(
                                 fontSize: 40.0,
                                 fontWeight: FontWeight.w900,
-                                color: context.color.onBackground,
+                                color: context.color.onSurface,
                                 height: 1.1,
                               ),
                             ),
@@ -234,7 +234,7 @@ class HomePricing extends StatelessWidget {
                               semanticsLabel: item.type.name.toString(),
                               style: context.text.bodyMedium?.copyWith(
                                 color:
-                                    context.color.onBackground.withOpacity(0.5),
+                                    context.color.onSurface.withOpacity(0.5),
                               ),
                             ),
                           ),
@@ -288,7 +288,7 @@ class HomePricing extends StatelessWidget {
                                             textAlign: TextAlign.justify,
                                             style: context.text.bodySmall
                                                 ?.copyWith(
-                                              color: context.color.onBackground,
+                                              color: context.color.onSurface,
                                             ),
                                           ),
                                         ),
@@ -314,7 +314,7 @@ class HomePricing extends StatelessWidget {
                         color: context.color.primary,
                         text: 'Upgrade',
                         style: context.text.bodyMedium?.copyWith(
-                          color: context.color.background,
+                          color: context.color.surface,
                         ),
                         borderRadius: BorderRadius.circular(Constants.spacing),
                         margin: const EdgeInsets.only(top: Constants.spacing),

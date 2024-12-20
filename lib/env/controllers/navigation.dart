@@ -79,7 +79,7 @@ class NavigationController extends ValueNotifier<String> {
     };
   }
 
-  void onKey(RawKeyEvent event) {
+  void onKey(KeyEvent event) {
     moveTo(double position) {
       scroll.animateTo(
         position.limit(0.0, scroll.position.maxScrollExtent),
@@ -88,15 +88,23 @@ class NavigationController extends ValueNotifier<String> {
       );
     }
 
-    if (scroll.hasClients && event is RawKeyDownEvent) {
+    if (scroll.hasClients && event is KeyDownEvent) {
+      bool isMetaPressed = event.logicalKey == LogicalKeyboardKey.meta;
+
       switch (event.logicalKey) {
         case LogicalKeyboardKey.arrowDown:
-          if (event.isMetaPressed) moveTo(scroll.position.maxScrollExtent);
-          if (!event.isMetaPressed) moveTo(scroll.offset + 50);
+          if (isMetaPressed) {
+            moveTo(scroll.position.maxScrollExtent);
+          } else {
+            moveTo(scroll.offset + 50);
+          }
           break;
         case LogicalKeyboardKey.arrowUp:
-          if (event.isMetaPressed) moveTo(0.0);
-          if (!event.isMetaPressed) moveTo(scroll.offset - 50);
+          if (isMetaPressed) {
+            moveTo(0.0);
+          } else {
+            moveTo(scroll.offset - 50);
+          }
           break;
         case LogicalKeyboardKey.pageDown:
           moveTo(scroll.offset + 200);

@@ -7,10 +7,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SelectionArea(
       child: Background.parallax(
-        child: RawKeyboardListener(
+        child: KeyboardListener(
           autofocus: true,
           focusNode: Env.controller.node,
-          onKey: Env.controller.onKey,
+          onKeyEvent: (event) =>
+              Env.controller.onKey(event), // Ensure `onKey` accepts KeyEvent,
           child: Scaffold(
             backgroundColor: Colors.transparent,
             appBar: NavigationHeader(),

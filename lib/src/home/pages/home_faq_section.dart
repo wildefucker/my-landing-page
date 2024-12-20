@@ -163,7 +163,7 @@ class HomeFAQ extends StatelessWidget {
             ),
             clipBehavior: Clip.hardEdge,
             decoration: BoxDecoration(
-              color: context.color.background,
+              color: context.color.surface,
               borderRadius: BorderRadius.circular(Constants.spacing * 0.25),
             ),
             child: MergeSemantics(
@@ -178,7 +178,7 @@ class HomeFAQ extends StatelessWidget {
                       item.title,
                       semanticsLabel: item.title,
                       style: context.text.bodyMedium?.copyWith(
-                        color: context.color.onBackground,
+                        color: context.color.onSurface,
                       ),
                     ),
                   ),

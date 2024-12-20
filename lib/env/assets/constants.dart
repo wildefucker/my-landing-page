@@ -31,11 +31,11 @@ class Constants {
             color: Colors.white.withOpacity(0.5),
           )),
       colorScheme: const ColorScheme.light(
-          error: Color(0xFFBF215A),
-          primary: Color(0xff0D47A1),
-          background: Colors.white,
-          onPrimary: Colors.white,
-          onBackground: Colors.black,
-          outline: Colors.grey,
-          surface: Color(0xffF5F9FF)));
+        error: Color(0xFFBF215A),
+        primary: Color(0xff0D47A1),
+        surface: Colors.white, // Replace 'background' with 'surface'
+        onPrimary: Colors.white,
+        onSurface: Colors.black, // Replace 'onBackground' with 'onSurface'
+        outline: Colors.grey,
+      ));
 }
