@@ -25,14 +25,15 @@ class Constants {
           bodyMedium: TextStyle(
               // fontFamily: Assets.fonts.vigaRegular,
               fontSize: 12.0,
-              color: Colors.white.withOpacity(0.5)),
+              color: Colors.white.withValues(alpha: 0.5)),
           bodySmall: TextStyle(
             fontSize: 11.0,
-            color: Colors.white.withOpacity(0.5),
+            color: Colors.white.withValues(alpha: 0.5),
           )),
       colorScheme: const ColorScheme.light(
         error: Color(0xFFBF215A),
-        primary: Color(0xff0D47A1),
+        //  primary: Color(0xff0D47A1),
+        primary: Colors.black,
         surface: Colors.white, // Replace 'background' with 'surface'
         onPrimary: Colors.white,
         onSurface: Colors.black, // Replace 'onBackground' with 'onSurface'

@@ -46,7 +46,7 @@ class Background extends StatelessWidget {
                         alignment: alignment,
                         source: source,
                         fit: fit,
-                        colorBlendMode: BlendMode.hardLight,
+                        colorBlendMode: BlendMode.overlay,
                         color: imageColor ?? context.color.primary))),
         child
       ],
@@ -75,7 +75,7 @@ class Background extends StatelessWidget {
                       alignment: Alignment(0.0, -1.0 + position),
                       source: 'assets/image/background.png',
                       fit: BoxFit.fitWidth,
-                      colorBlendMode: BlendMode.hardLight,
+                      colorBlendMode: BlendMode.overlay,
                       color: context.color.primary),
                 );
               },
